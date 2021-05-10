@@ -1,0 +1,149 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark  pt-1">
+        <div class="container">
+
+            <a class="navbar-brand" href="#"><img src="images/cloud9.png" alt=""></a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link p-4 active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link p-4" href="#">News</a>
+                    <a class="nav-item nav-link p-4" href="#">Live Cameras</a>
+                    <a class="nav-item nav-link p-4" href="#">Photos</a>
+                    <a class="nav-item nav-link p-4" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="serach-section  py-5">
+        <div class="container ">
+            <form class="form d-flex justify-content-center">
+                <input class=" form-control w-75 mr-sm-2 " id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-info my-2 my-sm-0" id="searchBtn" type="button">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="curr-temp-section">
+        <div class="container">
+            <div class=" position-relative">
+                <div class="container-fluid text-center " id="current">
+                    <div class="dayDetails d-flex justify-content-around">
+                        <h5 id="currDay"></h5>
+                        <h5 id="currDate"></h5>
+                    </div>
+                    <h2 id="currLocation" class="text-left"></h2>
+                    <div class="tempC text-center">
+                        <h1 class="d-inline" id="todaysTemp">
+                            <h2 class="d-inline">°C</h2>
+                        </h1>
+                        <img id="currIco" src="" alt="">
+                    </div>
+                    <div class="conditionTxt text-light text-center">
+                        <h4 id="currText"></h4>
+                    </div>
+                    <div class="additional d-flex justify-content-center py-2">
+                        <div class="additionalInfo">
+                            <img src="images/icon-umberella.png" alt="">
+                            <h6 id="currRainChance"></h6>
+                        </div>
+                        <div class="additionalInfo">
+                            <img src="images/icon-wind.png" alt="">
+                            <h6 id="currWindSpeed"></h6>
+                        </div>
+                        <div class="additionalInfo">
+                            <img src="images/icon-compass.png" alt="">
+                            <h6 id="currWindDir"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="next-forecast">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 py-4 tommorow">
+                    <div class="weatherIco text-center">
+                        <div class="dayDetails d-flex justify-content-around">
+                            <h5 id="tomDay"></h5>
+                            <h5 id="tomDate"></h5>
+                        </div>
+                        <img id="tomsIco" src="" alt="">
+                        <div class="tomTempC py-3 text-center">
+                            <h3 class="d-inline" id="tomsMaxTemp">
+                                <h4 class="d-inline">°C</h4>
+                            </h3>
+                        </div>
+                        <h5 class="d-inline" id="tomsMinTemp">
+                            <h6 class="d-inline">°C</h6>
+                        </h5>
+
+                        <div class="conditionTxt text-light text-center">
+                            <h5 id="tomText"></h5>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 py-4 nextTommorow">
+                    <div class="weatherIco text-center">
+                        <div class="dayDetails d-flex justify-content-around">
+                            <h5 id="nextTomDay"></h5>
+                            <h5 id="nextTomDate"></h5>
+                        </div>
+                        <img id="nextTomsIco" src="" alt="">
+                        <div class="nextTomTempC py-3 text-center">
+                            <h3 class="d-inline" id="nextTomsMaxTemp">
+                                <h4 class="d-inline">°C</h4>
+                            </h3>
+                        </div>
+                        <h5 class="d-inline" id="nextTomsMinTemp">
+                            <h6 class="d-inline">°C</h6>
+                        </h5>
+
+                        <div class="conditionTxt text-light text-center">
+                            <h5 id="nextTomText"></h5>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
